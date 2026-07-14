@@ -1,0 +1,11 @@
+{% load static %}
+<div class="filter-bar">
+    <span class="label">{{ total }} items</span>
+    <span class="label">Sort:</span>
+    <a href="{{ sort_base }}&sort=newest" class="{% if request.GET.sort == 'newest' or not request.GET.sort %}active{% endif %}">Newest</a>
+    <a href="{{ sort_base }}&sort=popularity" class="{% if request.GET.sort == 'popularity' %}active{% endif %}">Popularity</a>
+    <a href="{{ sort_base }}&sort=price-low" class="{% if request.GET.sort == 'price-low' %}active{% endif %}">Price: Low to High</a>
+    <a href="{{ sort_base }}&sort=price-high" class="{% if request.GET.sort == 'price-high' %}active{% endif %}">Price: High to Low</a>
+    <a href="{{ sort_base }}&sort=discount" class="{% if request.GET.sort == 'discount' %}active{% endif %}">Discount</a>
+    <a href="{{ sort_base }}&sort=rating" class="{% if request.GET.sort == 'rating' %}active{% endif %}">Top Rated</a>
+</div>

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="breadcrumb">
+    <a href="{% url 'home:index' %}">Home</a> /
+    <a href="{% url 'products:gender' product.gender %}">{{ product.get_gender_display }}</a> /
+    <a href="{% url 'products:category' product.gender product.category.slug %}">{{ product.category.name }}</a> /
+    {{ product.name }}
+</div>
+
+<div class="detail-wrap">
+    <div class="gallery">
+        {% with imgs=product.images.all %}
+            {% if imgs %}
+                <div class="main-img"><img src="{{ product.primary_image.image.url }}" alt="{{ product.name }}"></div>
+                <div class="thumbs">
+                    {% for img in imgs %}
+                        <img src="{{ img.image.url }}" alt="{{ img.alt }}" class="{% if img.is_primary %}active{% endif %}">
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="main-img"><img src="{% static 'images/placeholder.svg' %}" alt="{{ product.name }}"></div>
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <div class="detail-info">
+        <div class="detail-brand">{{ product.brand.name|default:"Myntra" }}</div>
+        <h1>{{ product.name }}</h1>
+        <div class="detail-rating">
+            {% if product.rating > 0 %}★ {{ product.rating }} ({{ product.num_ratings }} ratings){% else %}New Arrival{% endif %}
+        </div>
+        <div class="detail-price">
+            <span class="price">Rs. {{ product.price }}</span>
+            {% if product.mrp > product.price %}
+                <span class="mrp">Rs. {{ product.mrp }}</span>
+                <span style="color:var(--green);font-weight:600;">{{ product.discount_percent }}% OFF</span>
+            {% endif %}
+        </div>
+
+        <div class="size-row">
+            <div class="label">Select Size</div>
+            <form method="post" action="{% url 'cart:add' %}" class="size-form">
+                {% csrf_token %}
+                <input type="hidden" name="product_id" value="{{ product.id }}">
+                <input type="hidden" name="size" value="">
+                <input type="hidden" name="quantity" value="1">
+                <input type="hidden" name="next" value="{{ request.path }}">
+                <div class="sizes">
+                    {% for s in sizes %}
+                        <div class="size-box" data-size="{{ s }}">{{ s }}</div>
+                    {% endfor %}
+                </div>
+                <div class="detail-actions">
+                    <button type="submit" class="btn btn-primary">ADD TO BAG</button>
+                </div>
+            </form>
+            <form method="post" action="{% url 'wishlist:add' %}" class="wishlist-form" style="flex:1;">
+                {% csrf_token %}
+                <input type="hidden" name="product_id" value="{{ product.id }}">
+                <input type="hidden" name="next" value="{{ request.path }}">
+                <button type="submit" class="btn btn-outline" style="width:100%;">WISHLIST</button>
+            </form>
+        </div>
+
+        <div class="detail-desc">
+            <p>{{ product.description }}</p>
+            <ul style="margin-top:12px;color:#565a69;font-size:14px;line-height:1.8;">
+                <li><strong>Fabric:</strong> {{ product.fabric|default:"—" }}</li>
+                <li><strong>Color:</strong> {{ product.color|default:"—" }}</li>
+                <li><strong>Category:</strong> {{ product.category.name }}</li>
+                <li><strong>Availability:</strong> {% if product.is_in_stock %}In Stock{% else %}Out of Stock{% endif %}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% if related %}
+<section class="section">
+    <div class="section-title">You may also like</div>
+    <div class="product-grid">
+        {% for product in related %}
+            {% include "products/product_card.html" %}
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+{% endblock %}

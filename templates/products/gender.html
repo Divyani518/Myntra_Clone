@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="breadcrumb"><a href="{% url 'home:index' %}">Home</a> / {{ label }}</div>
+<h2 style="margin-bottom:8px;">{{ label }}</h2>
+
+{% if categories %}
+<div class="filter-bar" style="flex-wrap:wrap;">
+    <span class="label">Categories:</span>
+    {% for cat in categories %}
+        <a href="{% url 'products:category' gender cat.slug %}">{{ cat.name }}</a>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% include "products/_filterbar.html" with total=total sort_base=query_url %}
+{% include "products/_listing.html" with products=products page_obj=page_obj extra_query=extra_query %}
+{% endblock %}

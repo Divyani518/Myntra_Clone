@@ -1,0 +1,20 @@
+{% load static %}
+<div class="product-grid">
+    {% for product in products %}
+        {% include "products/product_card.html" %}
+    {% empty %}
+        <div class="empty-state">No products found.</div>
+    {% endfor %}
+</div>
+
+{% if page_obj.paginator.num_pages > 1 %}
+<nav style="display:flex;justify-content:center;gap:8px;margin:24px 0;">
+    {% if page_obj.has_previous %}
+        <a class="btn btn-outline" href="?page={{ page_obj.previous_page_number }}{{ extra_query }}">Previous</a>
+    {% endif %}
+    <span style="align-self:center;">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+    {% if page_obj.has_next %}
+        <a class="btn btn-outline" href="?page={{ page_obj.next_page_number }}{{ extra_query }}">Next</a>
+    {% endif %}
+</nav>
+{% endif %}

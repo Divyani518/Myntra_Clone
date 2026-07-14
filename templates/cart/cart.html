@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h2 style="margin-bottom:16px;">Shopping Bag ({{ cart.count }} items)</h2>
+
+{% if cart.items %}
+<div class="checkout-grid">
+    <div class="list-wrap">
+        {% for item in cart.items %}
+        <div class="cart-item">
+            <a href="{% url 'products:detail' item.product.slug %}">
+                {% with img=item.product.primary_image %}
+                    {% if img and img.image %}<img src="{{ img.image.url }}" alt="{{ item.product.name }}">{% else %}<img src="{% static 'images/placeholder.svg' %}" alt="">{% endif %}
+                {% endwith %}
+            </a>
+            <div>
+                <div class="ci-name">{{ item.product.name }}</div>
+                <div class="ci-meta">{{ item.product.brand.name|default:"Myntra" }}{% if item.size %} · Size: {{ item.size }}{% endif %}</div>
+                <div class="ci-meta">
+                    <span class="price">Rs. {{ item.product.price }}</span>
+                    {% if item.product.mrp > item.product.price %}<span class="mrp">Rs. {{ item.product.mrp }}</span>{% endif %}
+                </div>
+                <div style="display:flex;gap:16px;margin-top:8px;">
+                    <form method="post" action="{% url 'cart:update' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="item_id" value="{{ item.id }}">
+                        <div class="qty">
+                            <button type="button" class="dec">−</button>
+                            <input type="number" name="quantity" value="{{ item.quantity }}" min="1" style="width:44px;text-align:center;border:none;outline:none;">
+                            <button type="button" class="inc">+</button>
+                        </div>
+                    </form>
+                    <form method="post" action="{% url 'cart:remove' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="item_id" value="{{ item.id }}">
+                        <button type="submit" class="btn btn-outline" style="padding:6px 14px;">REMOVE</button>
+                    </form>
+                </div>
+            </div>
+            <div class="price">Rs. {{ item.subtotal }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <aside class="summary">
+        <h3>Price Details</h3>
+        <div class="summary-row"><span>Total MRP</span><span>Rs. {{ cart.total }}</span></div>
+        <div class="summary-row"><span>Discount</span><span style="color:var(--green);">Rs. 0</span></div>
+        <div class="summary-row"><span>Delivery</span><span style="color:var(--green);">FREE</span></div>
+        <div class="summary-row total"><span>Total</span><span>Rs. {{ cart.total }}</span></div>
+        <a href="{% url 'orders:checkout' %}" class="btn btn-primary" style="width:100%;margin-top:16px;text-align:center;">PLACE ORDER</a>
+    </aside>
+</div>
+{% else %}
+<div class="list-wrap empty-state">
+    <h3>Your bag is empty</h3>
+    <p>Add items to your bag to see them here.</p>
+    <a href="{% url 'products:list' %}" class="btn btn-primary">START SHOPPING</a>
+</div>
+{% endif %}
+{% endblock %}

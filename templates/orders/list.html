@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h2 style="margin-bottom:16px;">My Orders</h2>
+
+{% if orders %}
+<div class="list-wrap">
+    {% for order in orders %}
+    <a href="{% url 'orders:detail' order.order_number %}" class="cart-item" style="text-decoration:none;color:inherit;">
+        <div>
+            <div class="ci-name">{{ order.order_number }}</div>
+            <div class="ci-meta">{{ order.created_at|date:"d M Y, h:i A" }} · {{ order.get_status_display }}</div>
+        </div>
+        <div class="ci-meta">{{ order.items.count }} item(s)</div>
+        <div class="price">Rs. {{ order.total }}</div>
+    </a>
+    {% endfor %}
+</div>
+{% else %}
+<div class="list-wrap empty-state">
+    <h3>No orders yet</h3>
+    <p>You haven't placed any orders.</p>
+    <a href="{% url 'products:list' %}" class="btn btn-primary">START SHOPPING</a>
+</div>
+{% endif %}
+{% endblock %}

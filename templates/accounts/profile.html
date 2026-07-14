@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="profile-grid">
+    <aside class="profile-side">
+        <div class="avatar">{{ user.username|first|upper }}</div>
+        <h3 style="margin-bottom:4px;">{{ user.get_full_name|default:user.username }}</h3>
+        <p style="color:var(--muted);font-size:13px;">@{{ user.username }}</p>
+        <hr style="margin:16px 0;border:none;border-top:1px solid var(--line);">
+        <p style="font-size:13px;color:var(--muted);text-align:left;">
+            <a href="{% url 'orders:list' %}">📦 My Orders</a><br><br>
+            <a href="{% url 'wishlist:detail' %}">♥ My Wishlist</a><br><br>
+            <a href="{% url 'cart:detail' %}">🛍 My Bag</a><br><br>
+            <a href="{% url 'accounts:logout' %}">⏻ Logout</a>
+        </p>
+    </aside>
+
+    <section class="profile-card">
+        <h3>Edit Profile & Address</h3>
+        <form method="post">
+            {% csrf_token %}
+            {% if form.errors %}<ul class="errorlist">{% for e in form.non_field_errors %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
+            <div class="two-col">
+                <div class="field"><label>Phone</label>{{ form.phone }}</div>
+                <div class="field"><label>City</label>{{ form.city }}</div>
+                <div class="field" style="grid-column:1 / -1;"><label>Address Line 1</label>{{ form.address_line1 }}</div>
+                <div class="field" style="grid-column:1 / -1;"><label>Address Line 2</label>{{ form.address_line2 }}</div>
+                <div class="field"><label>State</label>{{ form.state }}</div>
+                <div class="field"><label>Pincode</label>{{ form.pincode }}</div>
+            </div>
+            <button type="submit" class="btn btn-primary">SAVE CHANGES</button>
+        </form>
+    </section>
+</div>
+{% endblock %}

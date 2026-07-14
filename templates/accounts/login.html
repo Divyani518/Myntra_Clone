@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="auth-wrap">
+    <h2>Login</h2>
+    <p class="sub">Log in to your Myntra account</p>
+    <form method="post" action="{% url 'accounts:login' %}">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ request.GET.next }}">
+        <div class="field">
+            <label>Username or Email</label>
+            <input type="text" name="username" required>
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">LOGIN</button>
+    </form>
+    <div class="auth-alt">New to Myntra? <a href="{% url 'accounts:signup' %}">Create an account</a></div>
+</div>
+{% endblock %}

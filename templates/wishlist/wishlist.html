@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h2 style="margin-bottom:16px;">My Wishlist ({{ items.count }} items)</h2>
+
+{% if items %}
+<div class="product-grid">
+    {% for w in items %}
+        {% with product=w.product %}
+        <div class="product-card">
+            <a href="{% url 'products:detail' product.slug %}" class="product-media">
+                {% with img=product.primary_image %}
+                    {% if img and img.image %}<img src="{{ img.image.url }}" alt="{{ product.name }}" loading="lazy">{% else %}<img src="{% static 'images/placeholder.svg' %}" alt="" loading="lazy">{% endif %}
+                {% endwith %}
+                {% if product.discount_percent > 0 %}<span class="tag-discount">{{ product.discount_percent }}% OFF</span>{% endif %}
+            </a>
+            <form method="post" action="{% url 'wishlist:remove' %}" style="position:absolute;top:8px;right:8px;">
+                {% csrf_token %}
+                <input type="hidden" name="product_id" value="{{ product.id }}">
+                <button class="wishlist-btn active" title="Remove from wishlist" style="border:none;">&#9829;</button>
+            </form>
+            <div class="product-info">
+                <div class="product-brand">{{ product.brand.name|default:"Myntra" }}</div>
+                <div class="product-name">{{ product.name }}</div>
+                <div class="product-meta">
+                    <span class="price">Rs. {{ product.price }}</span>
+                    {% if product.mrp > product.price %}<span class="mrp">Rs. {{ product.mrp }}</span>{% endif %}
+                    {% if product.rating > 0 %}<span class="rating">{{ product.rating }}</span>{% endif %}
+                </div>
+            </div>
+        </div>
+        {% endwith %}
+    {% endfor %}
+</div>
+{% else %}
+<div class="list-wrap empty-state">
+    <h3>Your wishlist is empty</h3>
+    <p>Save your favourite styles to find them later.</p>
+    <a href="{% url 'products:list' %}" class="btn btn-primary">EXPLORE PRODUCTS</a>
+</div>
+{% endif %}
+{% endblock %}

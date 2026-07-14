@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="breadcrumb">
+    <a href="{% url 'home:index' %}">Home</a> /
+    <a href="{% url 'products:gender' gender %}">{{ category.get_gender_display }}</a> /
+    {{ category.name }}
+</div>
+<h2 style="margin-bottom:8px;">{{ category.name }}</h2>
+<p style="color:var(--muted);margin-bottom:16px;">{{ category.description }}</p>
+
+{% include "products/_filterbar.html" with total=total sort_base=query_url %}
+{% include "products/_listing.html" with products=products page_obj=page_obj extra_query=extra_query %}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% load static %}
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="{% url 'products:gender' 'men' %}">Men</a>
+            <a href="{% url 'products:gender' 'women' %}">Women</a>
+            <a href="{% url 'products:gender' 'kids' %}">Kids</a>
+            <a href="{% url 'products:gender' 'beauty' %}">Beauty</a>
+            <a href="{% url 'products:gender' 'home' %}">Home & Living</a>
+            <a href="{% url 'best_sellers' %}">Best Sellers</a>
+            <a href="{% url 'products:list' %}">New Arrivals</a>
+        </div>
+        <div class="footer-col">
+            <h4>Customer Support</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">FAQs</a>
+            <a href="#">Size Guide</a>
+        </div>
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cancellation Policy</a>
+            <a href="#">Security</a>
+            <a href="#">Sitemap</a>
+        </div>
+        <div class="footer-col footer-brand">
+            <h4>Myntra</h4>
+            <p>Your one-stop destination for the latest trends in fashion and lifestyle. Premium shopping experience with the best deals.</p>
+            <div class="socials">
+                <span>FB</span><span>IG</span><span>X</span><span>YT</span>
+            </div>
+            <div class="footer-app">
+                <a href="#" title="App Store">App Store</a>
+                <a href="#" title="Google Play">Google Play</a>
+            </div>
+            <div class="footer-trust">
+                <span>🔒 Secure Payment</span>
+                <span>✓ 100% Authentic</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; {% now "Y" %} Myntra Clone Demo. All rights reserved. Built with Django. Not affiliated with any real brand.
+    </div>
+</footer>

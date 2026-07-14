@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="list-wrap empty-state" style="text-align:center;">
+    <div style="font-size:60px;color:var(--green);">✓</div>
+    <h2>Order Confirmed!</h2>
+    <p>Your order <strong>{{ order.order_number }}</strong> has been placed successfully.</p>
+    <p style="margin-top:8px;">Total paid: <strong>Rs. {{ order.total }}</strong> · Payment: {{ order.get_payment_method_display }}</p>
+    <div style="margin-top:20px;display:flex;gap:12px;justify-content:center;">
+        <a href="{% url 'orders:detail' order.order_number %}" class="btn btn-outline">VIEW ORDER</a>
+        <a href="{% url 'products:list' %}" class="btn btn-primary">CONTINUE SHOPPING</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% load static %}
+<div class="product-card">
+    <a href="{% url 'products:detail' product.slug %}" class="product-media">
+        {% with img=product.primary_image %}
+            {% if img and img.image %}
+                <img src="{{ img.image.url }}" alt="{{ img.alt|default:product.name }}" loading="lazy">
+            {% else %}
+                <img src="{% static 'images/placeholder.svg' %}" alt="{{ product.name }}" loading="lazy">
+            {% endif %}
+        {% endwith %}
+        {% if product.discount_percent > 0 %}
+            <span class="tag-discount">{{ product.discount_percent }}% OFF</span>
+        {% endif %}
+    </a>
+    <button class="wishlist-btn {% if product.id in wishlist_ids %}active{% endif %}" data-product="{{ product.id }}" title="Add to wishlist">&#9829;</button>
+    <div class="product-info">
+        <div class="product-brand">{{ product.brand.name|default:"Myntra" }}</div>
+        <div class="product-name">{{ product.name }}</div>
+        <div class="product-meta">
+            <span class="price">Rs. {{ product.price }}</span>
+            {% if product.mrp > product.price %}
+                <span class="mrp">Rs. {{ product.mrp }}</span>
+            {% endif %}
+            {% if product.rating > 0 %}
+                <span class="rating">{{ product.rating }}</span>
+            {% endif %}
+        </div>
+        <form method="post" action="{% url 'cart:add' %}" class="card-add-form">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" value="{{ product.id }}">
+            <input type="hidden" name="quantity" value="1">
+            <input type="hidden" name="next" value="{{ request.path }}">
+            <button type="submit" class="btn btn-primary btn-sm">ADD TO BAG</button>
+        </form>
+    </div>
+</div>

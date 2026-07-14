@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% if slides %}
+<section class="hero-swiper swiper">
+    <div class="swiper-wrapper">
+        {% for slide in slides %}
+        <div class="swiper-slide">
+            <div class="hero-slide" style="background-image:url('{{ slide.bg }}');">
+                <div class="hero-slide-overlay">
+                    <span class="hero-eyebrow">{{ slide.subtitle }}</span>
+                    <h1>{{ slide.title }}</h1>
+                    <a href="{{ slide.url }}" class="btn btn-primary">{{ slide.cta }}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</section>
+{% endif %}
+
+{% if category_strip %}
+<div class="section-wrap">
+    <nav class="cat-strip">
+        {% for cat in category_strip %}
+            <a class="cat-strip-item" href="{% url 'products:gender' cat.gender %}">
+                <span class="cat-strip-img" style="background-image:url('{{ cat.image.url }}');"></span>
+                <span class="cat-strip-label">{{ cat.get_gender_display }}</span>
+            </a>
+        {% endfor %}
+    </nav>
+</div>
+{% endif %}
+
+{% if category_cards %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Shop by Category</div>
+        <div class="cat-card-grid">
+            {% for card in category_cards %}
+            <a class="cat-card" href="{{ card.url }}">
+                <div class="cat-card-media">
+                    <img src="{{ card.img }}" alt="{{ card.name }}" loading="lazy">
+                </div>
+                <div class="cat-card-body">
+                    <div class="cat-card-name">{{ card.name }}</div>
+                    <div class="cat-card-discount">{{ card.discount }}</div>
+                    <div class="cat-card-shop">Shop Now →</div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if rows %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Trending Categories</div>
+        {% for gender, label, prods in rows %}
+        <div style="margin-bottom:32px;">
+            <div class="section-header">
+                <h3 style="font-size:18px;font-weight:700;color:var(--ink);">{{ label }}</h3>
+                <a href="{% url 'products:gender' gender %}" class="btn btn-sm btn-outline">View All</a>
+            </div>
+            <div class="product-row swiper">
+                <div class="swiper-wrapper">
+                    {% for product in prods %}
+                    <div class="swiper-slide">
+                        {% include "products/product_card.html" %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if brand_spotlight %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Brand Spotlight <a href="{% url 'products:list' %}">View All</a></div>
+        <div class="brand-row swiper">
+            <div class="swiper-wrapper">
+                {% for b in brand_spotlight %}
+                <div class="swiper-slide">
+                    <a href="{% url 'products:list' %}?brand={{ b.slug }}" class="brand-card">
+                        <div class="brand-card-inner">{{ b.name }}</div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if trending %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Trending Now <a href="{% url 'products:list' %}">View All</a></div>
+        <div class="product-row swiper">
+            <div class="swiper-wrapper">
+                {% for product in trending %}
+                <div class="swiper-slide">
+                    {% include "products/product_card.html" %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if new_arrivals %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">New Arrivals <a href="{% url 'products:list' %}">View All</a></div>
+        <div class="product-row swiper">
+            <div class="swiper-wrapper">
+                {% for product in new_arrivals %}
+                <div class="swiper-slide">
+                    {% include "products/product_card.html" %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if top_picks %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Top Picks <a href="{% url 'products:list' %}">View All</a></div>
+        <div class="product-row swiper">
+            <div class="swiper-wrapper">
+                {% for product in top_picks %}
+                <div class="swiper-slide">
+                    {% include "products/product_card.html" %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if featured_brands %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Featured Brands</div>
+        <div class="brand-grid">
+            {% for b in featured_brands %}
+            <a href="{% url 'products:list' %}?brand={{ b.slug }}" class="brand-card">{{ b.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if luxe_brands %}
+<section class="section">
+    <div class="section-wrap">
+        <div class="section-title">Luxe Brands</div>
+        <div class="brand-grid">
+            {% for b in luxe_brands %}
+            <a href="{% url 'products:list' %}?brand={{ b.slug }}" class="brand-card luxe">{{ b.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}

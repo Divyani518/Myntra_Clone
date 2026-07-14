@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="breadcrumb"><a href="{% url 'home:index' %}">Home</a> / {{ title }}</div>
+
+<div class="filter-bar">
+    <span class="label">{{ total }} items</span>
+    <span class="label">Sort:</span>
+    <a href="?sort=newest" class="{% if request.GET.sort == 'newest' or not request.GET.sort %}active{% endif %}">Newest</a>
+    <a href="?sort=popularity" class="{% if request.GET.sort == 'popularity' %}active{% endif %}">Popularity</a>
+    <a href="?sort=price-low" class="{% if request.GET.sort == 'price-low' %}active{% endif %}">Price: Low to High</a>
+    <a href="?sort=price-high" class="{% if request.GET.sort == 'price-high' %}active{% endif %}">Price: High to Low</a>
+    <a href="?sort=discount" class="{% if request.GET.sort == 'discount' %}active{% endif %}">Discount</a>
+    <a href="?sort=rating" class="{% if request.GET.sort == 'rating' %}active{% endif %}">Top Rated</a>
+</div>
+
+<div class="product-grid">
+    {% for product in products %}
+        {% include "products/product_card.html" %}
+    {% empty %}
+        <div class="empty-state">No products found.</div>
+    {% endfor %}
+</div>
+
+{% if page_obj.paginator.num_pages > 1 %}
+<nav style="display:flex;justify-content:center;gap:8px;margin:24px 0;">
+    {% if page_obj.has_previous %}
+        <a class="btn btn-outline" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+    <span style="align-self:center;">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+    {% if page_obj.has_next %}
+        <a class="btn btn-outline" href="?page={{ page_obj.next_page_number }}">Next</a>
+    {% endif %}
+</nav>
+{% endif %}
+{% endblock %}

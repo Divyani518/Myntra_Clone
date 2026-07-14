@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="breadcrumb"><a href="{% url 'home:index' %}">Home</a> / Search</div>
+<h2 style="margin-bottom:16px;">{% if query %}Results for "{{ query }}"{% else %}Search{% endif %}</h2>
+{% include "products/_filterbar.html" with total=total sort_base=query_url %}
+{% include "products/_listing.html" with products=products page_obj=page_obj extra_query=extra_query %}
+{% endblock %}
