@@ -1,0 +1,2192 @@
+[
+{
+  "model": "products.category",
+  "pk": 1,
+  "fields": {
+    "name": "T-Shirts",
+    "slug": "men-t-shirts",
+    "gender": "men",
+    "description": "",
+    "image": "categories/cat_men.jpg",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "products.category",
+  "pk": 2,
+  "fields": {
+    "name": "Shirts",
+    "slug": "men-shirts",
+    "gender": "men",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "products.category",
+  "pk": 3,
+  "fields": {
+    "name": "Jeans",
+    "slug": "men-jeans",
+    "gender": "men",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "products.category",
+  "pk": 4,
+  "fields": {
+    "name": "Footwear",
+    "slug": "men-footwear",
+    "gender": "men",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 3
+  }
+},
+{
+  "model": "products.category",
+  "pk": 5,
+  "fields": {
+    "name": "Jackets",
+    "slug": "men-jackets",
+    "gender": "men",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 4
+  }
+},
+{
+  "model": "products.category",
+  "pk": 6,
+  "fields": {
+    "name": "Dresses",
+    "slug": "women-dresses",
+    "gender": "women",
+    "description": "",
+    "image": "categories/cat_women.jpg",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "products.category",
+  "pk": 7,
+  "fields": {
+    "name": "Tops",
+    "slug": "women-tops",
+    "gender": "women",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "products.category",
+  "pk": 8,
+  "fields": {
+    "name": "Sarees",
+    "slug": "women-sarees",
+    "gender": "women",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "products.category",
+  "pk": 9,
+  "fields": {
+    "name": "Footwear",
+    "slug": "women-footwear",
+    "gender": "women",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 3
+  }
+},
+{
+  "model": "products.category",
+  "pk": 10,
+  "fields": {
+    "name": "Ethnic Wear",
+    "slug": "women-ethnic-wear",
+    "gender": "women",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 4
+  }
+},
+{
+  "model": "products.category",
+  "pk": 11,
+  "fields": {
+    "name": "Kids T-Shirts",
+    "slug": "kids-kids-t-shirts",
+    "gender": "kids",
+    "description": "",
+    "image": "categories/cat_kids.jpg",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "products.category",
+  "pk": 12,
+  "fields": {
+    "name": "Kids Dresses",
+    "slug": "kids-kids-dresses",
+    "gender": "kids",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "products.category",
+  "pk": 13,
+  "fields": {
+    "name": "Kids Footwear",
+    "slug": "kids-kids-footwear",
+    "gender": "kids",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "products.category",
+  "pk": 14,
+  "fields": {
+    "name": "Lipstick",
+    "slug": "beauty-lipstick",
+    "gender": "beauty",
+    "description": "",
+    "image": "categories/cat_beauty.jpg",
+    "is_active": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "products.category",
+  "pk": 15,
+  "fields": {
+    "name": "Face Cream",
+    "slug": "beauty-face-cream",
+    "gender": "beauty",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "products.category",
+  "pk": 16,
+  "fields": {
+    "name": "Perfume",
+    "slug": "beauty-perfume",
+    "gender": "beauty",
+    "description": "",
+    "image": "",
+    "is_active": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 1,
+  "fields": {
+    "name": "Roadster",
+    "slug": "roadster"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 2,
+  "fields": {
+    "name": "H&M",
+    "slug": "handm"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 3,
+  "fields": {
+    "name": "Nike",
+    "slug": "nike"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 4,
+  "fields": {
+    "name": "Zara",
+    "slug": "zara"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 5,
+  "fields": {
+    "name": "Mast & Harbour",
+    "slug": "mast-and-harbour"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 6,
+  "fields": {
+    "name": "Here&Now",
+    "slug": "hereandnow"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 7,
+  "fields": {
+    "name": "Anouk",
+    "slug": "anouk"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 8,
+  "fields": {
+    "name": "Puma",
+    "slug": "puma"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 9,
+  "fields": {
+    "name": "Adidas",
+    "slug": "adidas"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 10,
+  "fields": {
+    "name": "Wrogn",
+    "slug": "wrogn"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 11,
+  "fields": {
+    "name": "Allen Solly",
+    "slug": "allen-solly"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 12,
+  "fields": {
+    "name": "Biba",
+    "slug": "biba"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 13,
+  "fields": {
+    "name": "HRX",
+    "slug": "hrx"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 14,
+  "fields": {
+    "name": "Libas",
+    "slug": "libas"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 15,
+  "fields": {
+    "name": "U.S. Polo",
+    "slug": "us-polo"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 16,
+  "fields": {
+    "name": "Rare Rabbit",
+    "slug": "rare-rabbit"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 17,
+  "fields": {
+    "name": "Levi's",
+    "slug": "levis"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 18,
+  "fields": {
+    "name": "ONLY",
+    "slug": "only"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 19,
+  "fields": {
+    "name": "Flying Machine",
+    "slug": "flying-machine"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 20,
+  "fields": {
+    "name": "Nautica",
+    "slug": "nautica"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 21,
+  "fields": {
+    "name": "Tommy Hilfiger",
+    "slug": "tommy-hilfiger"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 22,
+  "fields": {
+    "name": "Calvin Klein",
+    "slug": "calvin-klein"
+  }
+},
+{
+  "model": "products.brand",
+  "pk": 23,
+  "fields": {
+    "name": "United Colors of Benetton",
+    "slug": "united-colors-of-benetton"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Trendy Sneakers",
+    "slug": "men-t-shirts-5629",
+    "category": 1,
+    "brand": 8,
+    "gender": "men",
+    "price": "1392.00",
+    "mrp": "1999.00",
+    "description": "A trendy sneakers from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 3.9,
+    "num_ratings": 281,
+    "stock": 20,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:22.407Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Printed Jacket",
+    "slug": "men-t-shirts-2113",
+    "category": 1,
+    "brand": 9,
+    "gender": "men",
+    "price": "1132.00",
+    "mrp": "2499.00",
+    "description": "A printed jacket from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.3,
+    "num_ratings": 241,
+    "stock": 50,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:22.753Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Summer Jeans",
+    "slug": "men-t-shirts-2754",
+    "category": 1,
+    "brand": 2,
+    "gender": "men",
+    "price": "645.00",
+    "mrp": "1299.00",
+    "description": "A summer jeans from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.5,
+    "num_ratings": 474,
+    "stock": 39,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:22.937Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Winter Sneakers",
+    "slug": "men-shirts-5617",
+    "category": 2,
+    "brand": 1,
+    "gender": "men",
+    "price": "682.00",
+    "mrp": "1299.00",
+    "description": "A winter sneakers from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.0,
+    "num_ratings": 250,
+    "stock": 11,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:23.123Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Printed Jeans",
+    "slug": "men-shirts-8116",
+    "category": 2,
+    "brand": 10,
+    "gender": "men",
+    "price": "3271.00",
+    "mrp": "4999.00",
+    "description": "A printed jeans from Anouk. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.8,
+    "num_ratings": 220,
+    "stock": 44,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:23.289Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Classic Jacket",
+    "slug": "men-shirts-1612",
+    "category": 2,
+    "brand": 11,
+    "gender": "men",
+    "price": "1164.00",
+    "mrp": "1999.00",
+    "description": "A classic jacket from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 3.7,
+    "num_ratings": 234,
+    "stock": 48,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:23.465Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Stylish Jeans",
+    "slug": "men-jeans-6164",
+    "category": 3,
+    "brand": 12,
+    "gender": "men",
+    "price": "557.00",
+    "mrp": "999.00",
+    "description": "A stylish jeans from Anouk. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.1,
+    "num_ratings": 294,
+    "stock": 15,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:23.642Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "Trendy Jeans",
+    "slug": "men-jeans-7304",
+    "category": 3,
+    "brand": 7,
+    "gender": "men",
+    "price": "2163.00",
+    "mrp": "3499.00",
+    "description": "A trendy jeans from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.7,
+    "num_ratings": 367,
+    "stock": 43,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:23.807Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "Casual Jacket",
+    "slug": "men-jeans-6642",
+    "category": 3,
+    "brand": 13,
+    "gender": "men",
+    "price": "2071.00",
+    "mrp": "3999.00",
+    "description": "A casual jacket from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.1,
+    "num_ratings": 264,
+    "stock": 14,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:23.979Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "Premium Shirt",
+    "slug": "men-jeans-1396",
+    "category": 3,
+    "brand": 14,
+    "gender": "men",
+    "price": "1012.00",
+    "mrp": "1299.00",
+    "description": "A premium shirt from Anouk. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.3,
+    "num_ratings": 496,
+    "stock": 45,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:24.152Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "Floral T-Shirt",
+    "slug": "men-footwear-2182",
+    "category": 4,
+    "brand": 15,
+    "gender": "men",
+    "price": "2697.00",
+    "mrp": "3499.00",
+    "description": "A floral t-shirt from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.1,
+    "num_ratings": 168,
+    "stock": 33,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:24.331Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "Stylish Shirt",
+    "slug": "men-footwear-4616",
+    "category": 4,
+    "brand": 16,
+    "gender": "men",
+    "price": "2889.00",
+    "mrp": "3999.00",
+    "description": "A stylish shirt from H&M. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 4.2,
+    "num_ratings": 299,
+    "stock": 36,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:24.512Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "Stylish Jacket",
+    "slug": "men-footwear-2518",
+    "category": 4,
+    "brand": 17,
+    "gender": "men",
+    "price": "815.00",
+    "mrp": "1299.00",
+    "description": "A stylish jacket from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 3.6,
+    "num_ratings": 163,
+    "stock": 15,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:24.695Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "Classic Jeans",
+    "slug": "men-footwear-8399",
+    "category": 4,
+    "brand": 18,
+    "gender": "men",
+    "price": "2297.00",
+    "mrp": "3999.00",
+    "description": "A classic jeans from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 3.9,
+    "num_ratings": 72,
+    "stock": 21,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:25.167Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "name": "Printed Jacket",
+    "slug": "men-jackets-9804",
+    "category": 5,
+    "brand": 19,
+    "gender": "men",
+    "price": "2286.00",
+    "mrp": "2999.00",
+    "description": "A printed jacket from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 3.8,
+    "num_ratings": 185,
+    "stock": 46,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:25.406Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "Classic Sneakers",
+    "slug": "men-jackets-2265",
+    "category": 5,
+    "brand": 5,
+    "gender": "men",
+    "price": "1772.00",
+    "mrp": "2499.00",
+    "description": "A classic sneakers from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.3,
+    "num_ratings": 106,
+    "stock": 45,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:25.596Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "Winter Jeans",
+    "slug": "men-jackets-6094",
+    "category": 5,
+    "brand": 6,
+    "gender": "men",
+    "price": "1485.00",
+    "mrp": "1999.00",
+    "description": "A winter jeans from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 3.9,
+    "num_ratings": 247,
+    "stock": 8,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:25.854Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "Stylish Kurta",
+    "slug": "women-dresses-8938",
+    "category": 6,
+    "brand": 20,
+    "gender": "women",
+    "price": "1315.00",
+    "mrp": "1999.00",
+    "description": "A stylish kurta from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.4,
+    "num_ratings": 121,
+    "stock": 10,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:26.133Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "Trendy Kurta",
+    "slug": "women-dresses-9325",
+    "category": 6,
+    "brand": 21,
+    "gender": "women",
+    "price": "2226.00",
+    "mrp": "3499.00",
+    "description": "A trendy kurta from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.7,
+    "num_ratings": 246,
+    "stock": 49,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:26.387Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "Premium Saree",
+    "slug": "women-dresses-8757",
+    "category": 6,
+    "brand": 22,
+    "gender": "women",
+    "price": "995.00",
+    "mrp": "1299.00",
+    "description": "A premium saree from H&M. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.5,
+    "num_ratings": 407,
+    "stock": 38,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:26.657Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "name": "Casual Saree",
+    "slug": "women-dresses-9763",
+    "category": 6,
+    "brand": 23,
+    "gender": "women",
+    "price": "2468.00",
+    "mrp": "4999.00",
+    "description": "A casual saree from Anouk. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.4,
+    "num_ratings": 311,
+    "stock": 29,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:26.923Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "Summer Kurta",
+    "slug": "women-tops-4028",
+    "category": 7,
+    "brand": 3,
+    "gender": "women",
+    "price": "886.00",
+    "mrp": "1299.00",
+    "description": "A summer kurta from H&M. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 4.6,
+    "num_ratings": 51,
+    "stock": 27,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:27.138Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "name": "Winter Kurta",
+    "slug": "women-tops-7374",
+    "category": 7,
+    "brand": 8,
+    "gender": "women",
+    "price": "909.00",
+    "mrp": "1999.00",
+    "description": "A winter kurta from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.4,
+    "num_ratings": 310,
+    "stock": 6,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:27.341Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "Solid Top",
+    "slug": "women-sarees-3984",
+    "category": 8,
+    "brand": 9,
+    "gender": "women",
+    "price": "1026.00",
+    "mrp": "1499.00",
+    "description": "A solid top from Anouk. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.0,
+    "num_ratings": 64,
+    "stock": 37,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:27.560Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "name": "Winter Top",
+    "slug": "women-sarees-3937",
+    "category": 8,
+    "brand": 2,
+    "gender": "women",
+    "price": "762.00",
+    "mrp": "999.00",
+    "description": "A winter top from Anouk. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.3,
+    "num_ratings": 40,
+    "stock": 44,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:27.742Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "name": "Casual Dress",
+    "slug": "women-sarees-4255",
+    "category": 8,
+    "brand": 1,
+    "gender": "women",
+    "price": "836.00",
+    "mrp": "1299.00",
+    "description": "A casual dress from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 3.6,
+    "num_ratings": 158,
+    "stock": 11,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:27.933Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "name": "Printed Heels",
+    "slug": "women-sarees-9954",
+    "category": 8,
+    "brand": 10,
+    "gender": "women",
+    "price": "1170.00",
+    "mrp": "2499.00",
+    "description": "A printed heels from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.7,
+    "num_ratings": 10,
+    "stock": 49,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:28.137Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "name": "Summer Kurta",
+    "slug": "women-sarees-8566",
+    "category": 8,
+    "brand": 11,
+    "gender": "women",
+    "price": "1379.00",
+    "mrp": "2999.00",
+    "description": "A summer kurta from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 3.9,
+    "num_ratings": 74,
+    "stock": 31,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:28.279Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "name": "Summer Heels",
+    "slug": "women-footwear-1598",
+    "category": 9,
+    "brand": 12,
+    "gender": "women",
+    "price": "495.00",
+    "mrp": "999.00",
+    "description": "A summer heels from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.1,
+    "num_ratings": 267,
+    "stock": 37,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:28.446Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "name": "Casual Saree",
+    "slug": "women-footwear-2238",
+    "category": 9,
+    "brand": 7,
+    "gender": "women",
+    "price": "3011.00",
+    "mrp": "4999.00",
+    "description": "A casual saree from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 4.1,
+    "num_ratings": 70,
+    "stock": 28,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:28.593Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "name": "Premium Saree",
+    "slug": "women-footwear-1919",
+    "category": 9,
+    "brand": 13,
+    "gender": "women",
+    "price": "1977.00",
+    "mrp": "3499.00",
+    "description": "A premium saree from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 4.3,
+    "num_ratings": 183,
+    "stock": 39,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:28.727Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "name": "Printed Saree",
+    "slug": "women-ethnic-wear-6819",
+    "category": 10,
+    "brand": 14,
+    "gender": "women",
+    "price": "1510.00",
+    "mrp": "1999.00",
+    "description": "A printed saree from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 3.9,
+    "num_ratings": 147,
+    "stock": 40,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:28.842Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "name": "Floral Saree",
+    "slug": "women-ethnic-wear-1341",
+    "category": 10,
+    "brand": 15,
+    "gender": "women",
+    "price": "909.00",
+    "mrp": "1299.00",
+    "description": "A floral saree from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.7,
+    "num_ratings": 431,
+    "stock": 38,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:29.002Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "name": "Floral Heels",
+    "slug": "women-ethnic-wear-1150",
+    "category": 10,
+    "brand": 16,
+    "gender": "women",
+    "price": "476.00",
+    "mrp": "999.00",
+    "description": "A floral heels from H&M. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 3.5,
+    "num_ratings": 98,
+    "stock": 17,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:29.171Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 35,
+  "fields": {
+    "name": "Solid Frock",
+    "slug": "kids-kids-t-shirts-6079",
+    "category": 11,
+    "brand": 17,
+    "gender": "kids",
+    "price": "1129.00",
+    "mrp": "1499.00",
+    "description": "A solid frock from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 3.8,
+    "num_ratings": 237,
+    "stock": 39,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:29.355Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 36,
+  "fields": {
+    "name": "Printed Shoes",
+    "slug": "kids-kids-t-shirts-4004",
+    "category": 11,
+    "brand": 18,
+    "gender": "kids",
+    "price": "1743.00",
+    "mrp": "3499.00",
+    "description": "A printed shoes from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 3.6,
+    "num_ratings": 14,
+    "stock": 50,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:29.493Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 37,
+  "fields": {
+    "name": "Classic Shoes",
+    "slug": "kids-kids-t-shirts-1167",
+    "category": 11,
+    "brand": 19,
+    "gender": "kids",
+    "price": "902.00",
+    "mrp": "1999.00",
+    "description": "A classic shoes from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.5,
+    "num_ratings": 384,
+    "stock": 39,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:29.672Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 38,
+  "fields": {
+    "name": "Printed Shoes",
+    "slug": "kids-kids-dresses-5256",
+    "category": 12,
+    "brand": 5,
+    "gender": "kids",
+    "price": "1336.00",
+    "mrp": "1999.00",
+    "description": "A printed shoes from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.5,
+    "num_ratings": 423,
+    "stock": 44,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:29.838Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 39,
+  "fields": {
+    "name": "Trendy Shoes",
+    "slug": "kids-kids-dresses-2372",
+    "category": 12,
+    "brand": 6,
+    "gender": "kids",
+    "price": "1705.00",
+    "mrp": "3499.00",
+    "description": "A trendy shoes from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.8,
+    "num_ratings": 306,
+    "stock": 29,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:29.960Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 40,
+  "fields": {
+    "name": "Stylish Frock",
+    "slug": "kids-kids-dresses-7001",
+    "category": 12,
+    "brand": 20,
+    "gender": "kids",
+    "price": "1345.00",
+    "mrp": "1999.00",
+    "description": "A stylish frock from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 3.9,
+    "num_ratings": 372,
+    "stock": 39,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:30.102Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 41,
+  "fields": {
+    "name": "Casual Frock",
+    "slug": "kids-kids-dresses-3207",
+    "category": 12,
+    "brand": 21,
+    "gender": "kids",
+    "price": "528.00",
+    "mrp": "999.00",
+    "description": "A casual frock from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.5,
+    "num_ratings": 350,
+    "stock": 30,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:30.255Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 42,
+  "fields": {
+    "name": "Classic Shoes",
+    "slug": "kids-kids-dresses-6867",
+    "category": 12,
+    "brand": 22,
+    "gender": "kids",
+    "price": "2032.00",
+    "mrp": "3999.00",
+    "description": "A classic shoes from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 4.2,
+    "num_ratings": 75,
+    "stock": 49,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:30.451Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 43,
+  "fields": {
+    "name": "Solid Shoes",
+    "slug": "kids-kids-footwear-2623",
+    "category": 13,
+    "brand": 23,
+    "gender": "kids",
+    "price": "1571.00",
+    "mrp": "1999.00",
+    "description": "A solid shoes from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 4.2,
+    "num_ratings": 387,
+    "stock": 11,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:30.661Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 44,
+  "fields": {
+    "name": "Trendy Shoes",
+    "slug": "kids-kids-footwear-2307",
+    "category": 13,
+    "brand": 3,
+    "gender": "kids",
+    "price": "765.00",
+    "mrp": "999.00",
+    "description": "A trendy shoes from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 3.6,
+    "num_ratings": 338,
+    "stock": 26,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:30.821Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 45,
+  "fields": {
+    "name": "Printed Frock",
+    "slug": "kids-kids-footwear-1312",
+    "category": 13,
+    "brand": 8,
+    "gender": "kids",
+    "price": "3951.00",
+    "mrp": "4999.00",
+    "description": "A printed frock from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.1,
+    "num_ratings": 355,
+    "stock": 30,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:30.977Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 46,
+  "fields": {
+    "name": "Summer T-Shirt",
+    "slug": "kids-kids-footwear-7712",
+    "category": 13,
+    "brand": 9,
+    "gender": "kids",
+    "price": "2312.00",
+    "mrp": "2999.00",
+    "description": "A summer t-shirt from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 3.7,
+    "num_ratings": 387,
+    "stock": 19,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:31.187Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 47,
+  "fields": {
+    "name": "Solid Cream",
+    "slug": "beauty-lipstick-9776",
+    "category": 14,
+    "brand": 2,
+    "gender": "beauty",
+    "price": "2822.00",
+    "mrp": "4999.00",
+    "description": "A solid cream from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.4,
+    "num_ratings": 125,
+    "stock": 12,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:31.336Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 48,
+  "fields": {
+    "name": "Trendy Lipstick",
+    "slug": "beauty-lipstick-9482",
+    "category": 14,
+    "brand": 1,
+    "gender": "beauty",
+    "price": "1146.00",
+    "mrp": "1499.00",
+    "description": "A trendy lipstick from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.7,
+    "num_ratings": 93,
+    "stock": 42,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:31.522Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 49,
+  "fields": {
+    "name": "Stylish Lipstick",
+    "slug": "beauty-lipstick-6541",
+    "category": 14,
+    "brand": 10,
+    "gender": "beauty",
+    "price": "1807.00",
+    "mrp": "2499.00",
+    "description": "A stylish lipstick from Roadster. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.5,
+    "num_ratings": 339,
+    "stock": 24,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:31.682Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 50,
+  "fields": {
+    "name": "Winter Cream",
+    "slug": "beauty-face-cream-3605",
+    "category": 15,
+    "brand": 11,
+    "gender": "beauty",
+    "price": "2398.00",
+    "mrp": "3499.00",
+    "description": "A winter cream from H&M. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 3.9,
+    "num_ratings": 299,
+    "stock": 9,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:31.872Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 51,
+  "fields": {
+    "name": "Summer Cream",
+    "slug": "beauty-face-cream-7258",
+    "category": 15,
+    "brand": 12,
+    "gender": "beauty",
+    "price": "2327.00",
+    "mrp": "4999.00",
+    "description": "A summer cream from Here&Now. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.8,
+    "num_ratings": 199,
+    "stock": 5,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:32.058Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 52,
+  "fields": {
+    "name": "Stylish Perfume",
+    "slug": "beauty-face-cream-6280",
+    "category": 15,
+    "brand": 7,
+    "gender": "beauty",
+    "price": "1560.00",
+    "mrp": "2999.00",
+    "description": "A stylish perfume from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.1,
+    "num_ratings": 360,
+    "stock": 32,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:32.208Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 53,
+  "fields": {
+    "name": "Printed Perfume",
+    "slug": "beauty-perfume-5846",
+    "category": 16,
+    "brand": 13,
+    "gender": "beauty",
+    "price": "2342.00",
+    "mrp": "3499.00",
+    "description": "A printed perfume from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Red",
+    "rating": 4.0,
+    "num_ratings": 87,
+    "stock": 44,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:32.337Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 54,
+  "fields": {
+    "name": "Premium Cream",
+    "slug": "beauty-perfume-1203",
+    "category": 16,
+    "brand": 14,
+    "gender": "beauty",
+    "price": "2944.00",
+    "mrp": "3999.00",
+    "description": "A premium cream from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.7,
+    "num_ratings": 374,
+    "stock": 27,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:32.490Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 55,
+  "fields": {
+    "name": "Casual Perfume",
+    "slug": "beauty-perfume-8444",
+    "category": 16,
+    "brand": 15,
+    "gender": "beauty",
+    "price": "1351.00",
+    "mrp": "2499.00",
+    "description": "A casual perfume from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Black",
+    "rating": 4.6,
+    "num_ratings": 340,
+    "stock": 18,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:32.671Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 56,
+  "fields": {
+    "name": "Floral Perfume",
+    "slug": "beauty-perfume-7924",
+    "category": 16,
+    "brand": 16,
+    "gender": "beauty",
+    "price": "1727.00",
+    "mrp": "2499.00",
+    "description": "A floral perfume from Zara. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Blue",
+    "rating": 4.7,
+    "num_ratings": 109,
+    "stock": 31,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:32.842Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 57,
+  "fields": {
+    "name": "Stylish Perfume",
+    "slug": "beauty-perfume-5542",
+    "category": 16,
+    "brand": 17,
+    "gender": "beauty",
+    "price": "1776.00",
+    "mrp": "2499.00",
+    "description": "A stylish perfume from Mast & Harbour. Perfect for everyday style.",
+    "fabric": "",
+    "color": "White",
+    "rating": 4.4,
+    "num_ratings": 56,
+    "stock": 37,
+    "is_featured": false,
+    "created_at": "2026-07-14T07:47:32.997Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 58,
+  "fields": {
+    "name": "Floral Cream",
+    "slug": "beauty-perfume-7298",
+    "category": 16,
+    "brand": 18,
+    "gender": "beauty",
+    "price": "865.00",
+    "mrp": "1499.00",
+    "description": "A floral cream from Nike. Perfect for everyday style.",
+    "fabric": "",
+    "color": "Green",
+    "rating": 3.7,
+    "num_ratings": 412,
+    "stock": 40,
+    "is_featured": true,
+    "created_at": "2026-07-14T07:47:33.134Z"
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "image": "products/men-t-shirts-5629-14899877.jpg",
+    "alt": "Trendy Sneakers",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 2,
+  "fields": {
+    "product": 2,
+    "image": "products/men-t-shirts-2113-14899877.jpg",
+    "alt": "Printed Jacket",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 3,
+  "fields": {
+    "product": 3,
+    "image": "products/men-t-shirts-2754-14899877.jpg",
+    "alt": "Summer Jeans",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 4,
+  "fields": {
+    "product": 4,
+    "image": "products/men-shirts-5617-real.jpg",
+    "alt": "Winter Sneakers",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 5,
+  "fields": {
+    "product": 5,
+    "image": "products/men-shirts-8116-real.jpg",
+    "alt": "Printed Jeans",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 6,
+  "fields": {
+    "product": 6,
+    "image": "products/men-shirts-1612-real.jpg",
+    "alt": "Classic Jacket",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 7,
+  "fields": {
+    "product": 7,
+    "image": "products/men-jeans-6164-0.jpg",
+    "alt": "Stylish Jeans",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 8,
+  "fields": {
+    "product": 8,
+    "image": "products/men-jeans-7304-0.jpg",
+    "alt": "Trendy Jeans",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 9,
+  "fields": {
+    "product": 9,
+    "image": "products/men-jeans-6642-0.jpg",
+    "alt": "Casual Jacket",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 10,
+  "fields": {
+    "product": 10,
+    "image": "products/men-jeans-1396-0.jpg",
+    "alt": "Premium Shirt",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 11,
+  "fields": {
+    "product": 11,
+    "image": "products/men-footwear-2182-0.jpg",
+    "alt": "Floral T-Shirt",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 12,
+  "fields": {
+    "product": 12,
+    "image": "products/men-footwear-4616-0.jpg",
+    "alt": "Stylish Shirt",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 13,
+  "fields": {
+    "product": 13,
+    "image": "products/men-footwear-2518-0.jpg",
+    "alt": "Stylish Jacket",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 14,
+  "fields": {
+    "product": 14,
+    "image": "products/men-footwear-8399-0.jpg",
+    "alt": "Classic Jeans",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 15,
+  "fields": {
+    "product": 15,
+    "image": "products/men-jackets-9804-0.jpg",
+    "alt": "Printed Jacket",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 16,
+  "fields": {
+    "product": 16,
+    "image": "products/men-jackets-2265-0.jpg",
+    "alt": "Classic Sneakers",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 17,
+  "fields": {
+    "product": 17,
+    "image": "products/men-jackets-6094-0.jpg",
+    "alt": "Winter Jeans",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 18,
+  "fields": {
+    "product": 18,
+    "image": "products/women-dresses-8938-0.jpg",
+    "alt": "Stylish Kurta",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 19,
+  "fields": {
+    "product": 19,
+    "image": "products/women-dresses-9325-0.jpg",
+    "alt": "Trendy Kurta",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 20,
+  "fields": {
+    "product": 20,
+    "image": "products/women-dresses-8757-0.jpg",
+    "alt": "Premium Saree",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 21,
+  "fields": {
+    "product": 21,
+    "image": "products/women-dresses-9763-0.jpg",
+    "alt": "Casual Saree",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 22,
+  "fields": {
+    "product": 22,
+    "image": "products/women-tops-4028-0.jpg",
+    "alt": "Summer Kurta",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 23,
+  "fields": {
+    "product": 23,
+    "image": "products/women-tops-7374-0.jpg",
+    "alt": "Winter Kurta",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 24,
+  "fields": {
+    "product": 24,
+    "image": "products/women-sarees-3984-0.jpg",
+    "alt": "Solid Top",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 25,
+  "fields": {
+    "product": 25,
+    "image": "products/women-sarees-3937-0.jpg",
+    "alt": "Winter Top",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 26,
+  "fields": {
+    "product": 26,
+    "image": "products/women-sarees-4255-0.jpg",
+    "alt": "Casual Dress",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 27,
+  "fields": {
+    "product": 27,
+    "image": "products/women-sarees-9954-0.jpg",
+    "alt": "Printed Heels",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 28,
+  "fields": {
+    "product": 28,
+    "image": "products/women-sarees-8566-0.jpg",
+    "alt": "Summer Kurta",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 29,
+  "fields": {
+    "product": 29,
+    "image": "products/women-footwear-1598-0.jpg",
+    "alt": "Summer Heels",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 30,
+  "fields": {
+    "product": 30,
+    "image": "products/women-footwear-2238-0.jpg",
+    "alt": "Casual Saree",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 31,
+  "fields": {
+    "product": 31,
+    "image": "products/women-footwear-1919-0.jpg",
+    "alt": "Premium Saree",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 32,
+  "fields": {
+    "product": 32,
+    "image": "products/women-ethnic-wear-6819-0.jpg",
+    "alt": "Printed Saree",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 33,
+  "fields": {
+    "product": 33,
+    "image": "products/women-ethnic-wear-1341-0.jpg",
+    "alt": "Floral Saree",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 34,
+  "fields": {
+    "product": 34,
+    "image": "products/women-ethnic-wear-1150-0.jpg",
+    "alt": "Floral Heels",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 35,
+  "fields": {
+    "product": 35,
+    "image": "products/kids-kids-t-shirts-6079-0.jpg",
+    "alt": "Solid Frock",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 36,
+  "fields": {
+    "product": 36,
+    "image": "products/kids-kids-t-shirts-4004-0.jpg",
+    "alt": "Printed Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 37,
+  "fields": {
+    "product": 37,
+    "image": "products/kids-kids-t-shirts-1167-0.jpg",
+    "alt": "Classic Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 38,
+  "fields": {
+    "product": 38,
+    "image": "products/kids-kids-dresses-5256-0.jpg",
+    "alt": "Printed Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 39,
+  "fields": {
+    "product": 39,
+    "image": "products/kids-kids-dresses-2372-0.jpg",
+    "alt": "Trendy Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 40,
+  "fields": {
+    "product": 40,
+    "image": "products/kids-kids-dresses-7001-0.jpg",
+    "alt": "Stylish Frock",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 41,
+  "fields": {
+    "product": 41,
+    "image": "products/kids-kids-dresses-3207-0.jpg",
+    "alt": "Casual Frock",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 42,
+  "fields": {
+    "product": 42,
+    "image": "products/kids-kids-dresses-6867-0.jpg",
+    "alt": "Classic Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 43,
+  "fields": {
+    "product": 43,
+    "image": "products/kids-kids-footwear-2623-0.jpg",
+    "alt": "Solid Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 44,
+  "fields": {
+    "product": 44,
+    "image": "products/kids-kids-footwear-2307-0.jpg",
+    "alt": "Trendy Shoes",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 45,
+  "fields": {
+    "product": 45,
+    "image": "products/kids-kids-footwear-1312-0.jpg",
+    "alt": "Printed Frock",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 46,
+  "fields": {
+    "product": 46,
+    "image": "products/kids-kids-footwear-7712-0.jpg",
+    "alt": "Summer T-Shirt",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 47,
+  "fields": {
+    "product": 47,
+    "image": "products/beauty-lipstick-9776-0.jpg",
+    "alt": "Solid Cream",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 48,
+  "fields": {
+    "product": 48,
+    "image": "products/beauty-lipstick-9482-0.jpg",
+    "alt": "Trendy Lipstick",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 49,
+  "fields": {
+    "product": 49,
+    "image": "products/beauty-lipstick-6541-0.jpg",
+    "alt": "Stylish Lipstick",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 50,
+  "fields": {
+    "product": 50,
+    "image": "products/beauty-face-cream-3605-0.jpg",
+    "alt": "Winter Cream",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 51,
+  "fields": {
+    "product": 51,
+    "image": "products/beauty-face-cream-7258-0.jpg",
+    "alt": "Summer Cream",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 52,
+  "fields": {
+    "product": 52,
+    "image": "products/beauty-face-cream-6280-0.jpg",
+    "alt": "Stylish Perfume",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 53,
+  "fields": {
+    "product": 53,
+    "image": "products/beauty-perfume-5846-0.jpg",
+    "alt": "Printed Perfume",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 54,
+  "fields": {
+    "product": 54,
+    "image": "products/beauty-perfume-1203-0.jpg",
+    "alt": "Premium Cream",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 55,
+  "fields": {
+    "product": 55,
+    "image": "products/beauty-perfume-8444-0.jpg",
+    "alt": "Casual Perfume",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 56,
+  "fields": {
+    "product": 56,
+    "image": "products/beauty-perfume-7924-0.jpg",
+    "alt": "Floral Perfume",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 57,
+  "fields": {
+    "product": 57,
+    "image": "products/beauty-perfume-5542-0.jpg",
+    "alt": "Stylish Perfume",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 58,
+  "fields": {
+    "product": 58,
+    "image": "products/beauty-perfume-7298-0.jpg",
+    "alt": "Floral Cream",
+    "is_primary": true
+  }
+}
+]
